@@ -37,7 +37,7 @@ let rotation_speed = 0.3;
 let isPlaying = false;
 let score = 0;
 // The minimum amount of seconds the player has to stay on the goal
-let minTime = 2; 
+let minTime = 1; 
 
 
 // Teleportation spots
