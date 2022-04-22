@@ -27,7 +27,7 @@ var game = new Phaser.Game(config);
 
 // Variables
 let car_speed = 0;
-let maxSpeed = 30;
+let maxSpeed = 60;
 
 let steering_wheel;
 let steering_rotation = 0;
@@ -262,6 +262,7 @@ function create ()
         player.setToSleep();
         car_speed = 0;
         isPlaying = false;
+        steering_rotation = 0;
         let set = setTimeout(resetProgress, 1000);
     });
     
