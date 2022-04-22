@@ -218,7 +218,7 @@ function create ()
     endPanel = this.add.image(config.width/2, config.height/2, 'ui_end');
     end_ui_reset = this.add.image(config.width/2 + 20, config.height/2 + 270, 'ui_reset');
     end_ui_reset.setInteractive();
-    end_ui_reset.on(Phaser.Input.Events.GAMEOBJECT_POINTER_DOWN, () => { end_ui_reset.setTexture('ui_reset_down'), setVisible(false, containerEnd), isPlaying = true, audio_click.play()});
+    end_ui_reset.on(Phaser.Input.Events.GAMEOBJECT_POINTER_DOWN, () => { end_ui_reset.setTexture('ui_reset_down'), setVisible(false, containerEnd), isPlaying = true, resetProgress(), audio_click.play()});
     end_ui_reset.on(Phaser.Input.Events.GAMEOBJECT_POINTER_OVER, () => { end_ui_reset.setTexture('ui_reset_over'), end_ui_reset.scale = 1.1});
     end_ui_reset.on(Phaser.Input.Events.GAMEOBJECT_POINTER_OUT, () => { end_ui_reset.setTexture('ui_reset'), end_ui_reset.scale = 1});
     
