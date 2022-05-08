@@ -62,7 +62,6 @@ function preload ()
     // Load in the assets
     this.load.image('car', 'assets/car.png');
     this.load.image('car_tire', 'assets/car_tire.png');
-    this.load.image('parking_lot', 'assets/parking_lot.png');
     this.load.image('bg', 'assets/bg.png');
     this.load.image('front_wheels', 'assets/front_wheels.png');
     // Goal
@@ -95,7 +94,6 @@ function preload ()
     this.load.audio('win1', 'assets/audio/win1.mp3')
     this.load.audio('win2', 'assets/audio/win2.mp3')
     // Misc.
-    this.load.image('point', 'assets/point.png');
         
 }
 
